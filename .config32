@@ -1,3 +1,7 @@
+# Target System
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt7621=y
+CONFIG_TARGET_MULTI_PROFILE=y
 
 # Target Devices
 CONFIG_TARGET_DEVICE_ramips_mt7621_DEVICE_linksys_ea8100-v1=y
