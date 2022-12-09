@@ -39,3 +39,4 @@ sed -i "s/system.@system[-1].hostname='OpenWrt'/set system.@system[-1].hostname=
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git https://github.com/puteraseroja/kenzok8-packages' >>feeds.conf.default
