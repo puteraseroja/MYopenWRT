@@ -10,19 +10,6 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Enable wifi
-sed -i 's/set wireless.radio${devidx}.disabled=1/set wireless.radio${devidx}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
-# Change SSID
-sed -i "s/set wireless.default_radio\${devidx}.ssid=\(^.*\)/wireless.default_radio\${devidx}.ssid=PuteraSeroja\${mode_band}/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
-# Change hostname
-sed -i "s/system.@system[-1].hostname='OpenWrt'/set system.@system[-1].hostname='PuteraSeroja'/g" package/base-files/files/bin/config_generate
-
-# Set Description and Notes
-#echo "system.@system[-1].description='compiled by puteraseroja'"
-#echo "system.@system[-1].notes='this firmware is free. download  at telegram channel: t.me/+3j15vqnEPihmNWQ1'/g" >>package/base-files/files/bin/config_generate
-
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
 #sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 
