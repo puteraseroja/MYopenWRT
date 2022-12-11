@@ -26,7 +26,7 @@ env:
   CONFIG_FILE: .config32
   DIY_P1_SH: mt7621-32-part1.sh
   DIY_P2_SH: mt7621-32-part2.sh
-  TZ: Asia/Kuala_lumpur
+  TZ: America/New_York
 
 jobs:
   build:
