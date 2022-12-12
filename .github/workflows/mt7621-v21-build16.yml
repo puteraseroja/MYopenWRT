@@ -36,17 +36,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Update Go
         uses: actions/setup-go@v3
         with:
           go-version: '1.19'
           check-latest: true
           cache: true
-        run: go version
 
       - name: Initialization environment
-
-
         id: init
         env:
           DEBIAN_FRONTEND: noninteractive
